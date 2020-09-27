@@ -5,140 +5,65 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="./css/style_html.css">
   <title>HTML/홈 서버</title>
-  <style type="text/css">
-    div#side_left {
-      width: 290px;
-      height: 700px;
-      background-color: #F2FA91;
-      float: left;
-      margin-left: 5px;
-      margin-right: 5px;
-
-    }
-
-    #side_left_box {
-      width: 265px;
-      height: 80%;
-      background-color: #D2DD30;
-      margin-left: 12px;
-      margin-right: 5px;
-    }
-
-    #header {
-      min-width: 60%;
-      max-width: available;
-      height: 75px;
-      background-color: #F0F65F;
-      float: left;
-      margin-left: 5px;
-    }
-
-    #section {
-      min-width: 60%;
-      max-width: 380px;
-      min-height: 700px;
-      max-height: fit-content;
-      background-color: #F9FAE4;
-      float: left;
-      margin-left: 5px;
-    }
-
-    #footer {
-      min-width: 60%;
-      max-width: 380px;
-      height: fit-content;
-      background-color: #94FA80;
-      float: left;
-      margin-left: 305px;
-    }
-
-
-
-    #font_list {
-      font-size: auto;
-    }
-
-    #highlight {
-      background-color: yellow;
-      width: fit-content;
-    }
-
-    #pre {
-      position: static;
-      display: block;
-      font-family: monospace;
-      white-space: pre-line;
-      margin: 1em 0;
-    }
-
-    }
-  </style>
 </head>
 
 <body>
-  <div id="background">
-    <div id="side_left">
-      <h2>List Box</h2>
-
-      <div id="side_left_box">
-        <nav>
-          <ol>
-            <h2><a href="index.html">HTML</a></h2>
-            <li><a href="html1.html">웹 그 자체의 이해 </a></li>
-            <li><a href="html2.html">홈서버</a></li>
-            <li><a href="html3.html">DNS</a></li>
-            <li><a href="html4.html">HTTP의 개념</a></li>
-            <li><a href="html5.html">HTML 기본 문법과 기본 태그</a></li>
-            <li><a href="html6.html">표 만들기(table)</a></li>
-            <li><a href="html7.html">입력양식(Form)</a></li>
-          </ol>
-        </nav>
-      </div>
-
+  <div id="header">
+    <header>
+      <h1>홈 서버</h1>
+    </header>
+  </div>
+  <div id="grid">
+    <div id="navigation">
+      <nav>
+        <ol>
+          <h2><a href="index.html">HTML</a></h2>
+          <li><a href="html1.html">웹 그 자체의 이해 </a></li>
+          <li><a href="html2.html">홈서버</a></li>
+          <li><a href="html3.html">DNS</a></li>
+          <li><a href="html4.html">HTTP의 개념</a></li>
+          <li><a href="html5.html">HTML 기본 문법과 기본 태그</a></li>
+          <li><a href="html6.html">표 만들기(table)</a></li>
+          <li><a href="html7.html">입력양식(Form)</a></li>
+        </ol>
+      </nav>
     </div>
-
-    <div id="header">
-      <header>
-        <h1>홈서버</h1>
-      </header>
-    </div>
-
     <div id="section">
       <section>
         <article class="">
           <h2>공유기(router)</h2>
-          <p>
           <dl>
             <dt>
               IP address
-            <dd>다른 컴퓨터와 통신하기 위한 컴퓨터의 주소값</dd>
             </dt>
+            <dd>다른 컴퓨터와 통신하기 위한 컴퓨터의 주소값</dd>
+
             <dt>
               LAN
-            <dd>근거리 통신망, 로컬 영역 네트워크(영어: local area network, LAN), 구내 정보 통신망은 네트워크 매체를 이용하여 집, 사무실, 학교 등의 건물과 같은 가까운 지역을 한데 묶는 컴퓨터 네트워크이다.</dd>
             </dt>
+            <dd>근거리 통신망, 로컬 영역 네트워크(영어: local area network, LAN), 구내 정보 통신망은 네트워크 매체를 이용하여 집, 사무실, 학교 등의 건물과 같은 가까운 지역을 한데 묶는 컴퓨터 네트워크이다.</dd>
 
             <dt>
               WAN
-            <dd>광역 통신망(영어: wide area network, WAN)은 드넓은 지리적 거리/장소를 넘나드는 통신 네트워크 또는 컴퓨터 네트워크이다. 광역 통신망은 종종 전용선과 함께 구성된다.</dd>
             </dt>
+            <dd>광역 통신망(영어: wide area network, WAN)은 드넓은 지리적 거리/장소를 넘나드는 통신 네트워크 또는 컴퓨터 네트워크이다. 광역 통신망은 종종 전용선과 함께 구성된다.</dd>
           </dl>
 
           각각의 통신장비들은 공유기에 연결되는 순간 각각의 IP주소를 부여받는다.(private IP adress 사설IP)
           공유기 또한 고유의 IP주소를 부여받는다.(gateway address-LAN)(public IP address 공용IP-WAN)
-          </p>
         </article>
         <article class="">
           <h2>NAT(Network Address Translation)</h2>
           <dl>
-            <dt>NAT(Network Address Translation)
+            <dt>NAT(Network Address Translation)</dt>
             <dd>
               외부로(WAN) 정보를 요청->공유기 안에 요청한 컴퓨터(192.168.0.4)의 정보를 저장->
               NAT이 요청한 데이터를 WAN(59.6.66.238)로 변경하고 변경된 데이터를 위키피디아(외부 정보)로 전송-> 위키피디아는 WAN 공유기로 다시 전송-> 컴퓨터(192.168.0.4)로 전송
               => 쉽게 말해 LAN과 WAN의 연결 역할을 한다.
             </dd>
-            </dt>
+
           </dl>
         </article>
         <article class="">
@@ -196,14 +121,12 @@
           <p>
             집(59.6.66.238) - ISP - 외부 사용자
           </p>
-          <p>
           <dl>
-            <dt>ISP
+            <dt>ISP</dt>
             <dd>개인이나 기업체에게 인터넷 접속 서비스, 웹사이트 구축 및 웹호스팅 서비스 등을 제공하는 회사를 말한다. 대표적으로 한국에서는 KT, SK브로드밴드, LG U+ 등이 있다.</dd>
-            </dt>
+
           </dl>
           외부 사용자가 집에 해당하는 IP주소를 치면 ISP를 통해 집 컴퓨터에 접속
-          </p>
           <h3>만약, 외부 사용자가 많아진다면?</h3>
           <h4>Dynamic IP address</h4>
           <p>
@@ -266,12 +189,6 @@
         </article>
       </section>
     </div>
-
-    <footer id="footer">
-      <h2>footer</h2>
-    </footer>
-
-
   </div>
 </body>
 

@@ -5,113 +5,31 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="./css/style_html.css">
   <title>HTML/DNS</title>
-  <style type="text/css">
-    div#side_left {
-      width: 290px;
-      height: 700px;
-      background-color: #F2FA91;
-      float: left;
-      margin-left: 5px;
-      margin-right: 5px;
-
-    }
-
-    #side_left_box {
-      width: 265px;
-      height: 80%;
-      background-color: #D2DD30;
-      margin-left: 12px;
-      margin-right: 5px;
-    }
-
-    #header {
-      min-width: 60%;
-      max-width: available;
-      height: 75px;
-      background-color: #F0F65F;
-      float: left;
-      margin-left: 5px;
-    }
-
-    #section {
-      min-width: 60%;
-      max-width: 380px;
-      min-height: 700px;
-      max-height: fit-content;
-      background-color: #F9FAE4;
-      float: left;
-      margin-left: 5px;
-    }
-
-    #footer {
-      min-width: 60%;
-      max-width: 380px;
-      height: fit-content;
-      background-color: #94FA80;
-      float: left;
-      margin-left: 305px;
-    }
-
-
-
-    #font_list {
-      font-size: auto;
-    }
-
-    #highlight {
-      background-color: yellow;
-      width: fit-content;
-    }
-
-    #pre {
-      position: static;
-      display: block;
-      font-family: monospace;
-      white-space: pre-line;
-      margin: 1em 0;
-    }
-
-    #img {
-      margin-left: 10px;
-    }
-    }
-
-    #dl {
-      margin-left: 10px;
-      list-style-type: circle;
-    }
-  </style>
 </head>
 
 <body>
-  <div id="background">
-    <div id="side_left">
-      <h2>List Box</h2>
-
-      <div id="side_left_box">
-        <nav>
-          <ol>
-            <h2><a href="index.html">HTML</a></h2>
-            <li><a href="html1.html">웹 그 자체의 이해 </a></li>
-            <li><a href="html2.html">홈서버</a></li>
-            <li><a href="html3.html">DNS</a></li>
-            <li><a href="html4.html">HTTP의 개념</a></li>
-            <li><a href="html5.html">HTML 기본 문법과 기본 태그</a></li>
-            <li><a href="html6.html">표 만들기(table)</a></li>
-            <li><a href="html7.html">입력양식(Form)</a></li>
-          </ol>
-        </nav>
-      </div>
-
+  <div id="header">
+    <header>
+      <h1>DNS</h1>
+    </header>
+  </div>
+  <div id="grid">
+    <div id="navigation">
+      <nav>
+        <ol>
+          <h2><a href="index.html">HTML</a></h2>
+          <li><a href="html1.html">웹 그 자체의 이해 </a></li>
+          <li><a href="html2.html">홈서버</a></li>
+          <li><a href="html3.html">DNS</a></li>
+          <li><a href="html4.html">HTTP의 개념</a></li>
+          <li><a href="html5.html">HTML 기본 문법과 기본 태그</a></li>
+          <li><a href="html6.html">표 만들기(table)</a></li>
+          <li><a href="html7.html">입력양식(Form)</a></li>
+        </ol>
+      </nav>
     </div>
-
-    <div id="header">
-      <header>
-        <h1>DNS</h1>
-      </header>
-    </div>
-
     <div id="section">
       <section>
         <article class="">
@@ -120,7 +38,7 @@
             두 대의 컴퓨터가 통신하기 위해 반드시 필요한것 -> IP주소
           </p>
           <p>
-            <dt>Host</dt>
+            <dt>Host:</dt>
             <dd>네트워크에 연결되어 있는 장치들</dd>
           </p>
           <p>
@@ -216,11 +134,11 @@
               </ul>
             </li>
             <li>
-              <dt>DNS 바꾸는 법(Mac OS)
+              <dt>DNS 바꾸는 법(Mac OS)</dt>
               <dd>
                 시스템 환경설정 -> 네트워크 -> 연결된 인터넷 탭에서 고급... -> DNS탭 -> 왼쪽 하단에 +버튼 클릭 -> 1.1.1.1 입력 -> 하나 더 추가해서 1.0.0.1 입력(보험용) -> 확인 -> 적용
               </dd>
-              </dt>
+
             </li>
           </ul>
           </p>
@@ -337,7 +255,6 @@
           <p>
             등록대행자 추천(<a href="https://www.freenom.com/en/index.html?lang=en" target="_blank">freenom.com</a>-1년동안 무료)
           </p>
-          <p>
           <dl>
             <dt>
               사용법:
@@ -346,14 +263,12 @@
               <a href="https://www.youtube.com/watch?v=JpQP_aY6zqc&feature=youtu.be&list=PLuHgQVnccGMCI75J-rC8yZSVGZq3gYsFp" target="_blank">WEB2-Domain Name System-11.나의 도메인 이름 장만하기</a>
             </dd>
           </dl>
-          </p>
         </article>
         <article class="">
           <h2> DNS record & CNAME</h2>
           <p>
             Dns4u.ga A 52.231.13.22 : DNS record
           </p>
-          <p>
           <dl>
             <dt>DNS record의 type:</dt>
             <dd><a href="https://en.wikipedia.org/wiki/List_of_DNS_record_types" target="_blank">https://en.wikipedia.org/wiki/List_of_DNS_record_types</a></dd>
@@ -375,7 +290,6 @@
               IP주소가 계속 바뀜, 사이트를 가리키는 또 다른 주소가 여러가지가 있을 때
             </dd>
           </dl>
-          </p>
         </article>
         <article class="">
           <h2>Github pages에 도메인 연결하기</h2>
@@ -398,7 +312,6 @@
             dns4u.ga <a href="https://web-n.github.io/web1_html_internet/" target="_blank">https://web-n.github.io/web1_html_internet/</a> 이 규칙에 따라서 사용자에게 응답해줌 -> 사용자는 결국 dns4u.ga 라는 도메인을 통해서 컨텐츠를 가져갈수 있게된다.
           </p>
           <h3>우리가 해야할 것</h3>
-          <p>
           <ol>
             <li>
               github에게 dns4u.ga라는 도메인을 알려주는 것.
@@ -408,22 +321,13 @@
             </li>
           </ol>
           <img id="img" src="./img/html3_6.png" alt="Github 통신" width="60%">
-          </p>
-          <p>
           <h3>하는법 영상참고:</h3>
           <ul>
             <li><a href="https://www.youtube.com/watch?v=SUG8v3HE0Mg&feature=youtu.be&list=PLuHgQVnccGMCI75J-rC8yZSVGZq3gYsFp&t=454" target="_blank">WEB2-Domain Name System-13.Github pages에 도메인 연결하기</a></li>
           </ul>
-          </p>
         </article>
       </section>
     </div>
-
-    <footer id="footer">
-      <h2>footer</h2>
-    </footer>
-
-
   </div>
 </body>
 
