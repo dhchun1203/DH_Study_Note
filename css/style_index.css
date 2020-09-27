@@ -11,6 +11,7 @@ h1 {
   display: block;
 }
 
+
 #grid li {
   font-size: 1.5vw;
 }
@@ -36,10 +37,9 @@ h1 {
   grid-template-columns: 1fr 1fr 1fr;
 }
 
-div {
-  border: 3px solid black;
-}
+
 
 #grid div {
-  height: 500px;
+  height:auto;
+  border-right: 1px dotted;
 }
