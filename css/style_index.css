@@ -4,7 +4,9 @@ h1 {
   margin: 10px 0px 10px 0px;
   padding: 10px;
 }
-
+h2{
+  font-size: 3vw;
+}
 #grid a {
   text-decoration: none;
   margin-bottom: 4px;
