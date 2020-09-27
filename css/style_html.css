@@ -10,12 +10,13 @@
   display: grid;
   grid-template-columns: 200px 1fr;
 }
-#grid section{
+
+#grid section {
   padding-left: 10px;
 }
 
-#grid h2{
-  margin-top:10px;
+#grid h2 {
+  margin-top: 10px;
 }
 
 #navigation {
@@ -26,11 +27,35 @@
   font-size: 15px;
   padding-left: 17px
 }
+
+#navigation a {
+  text-decoration: none;
+  margin-bottom: 4px;
+  display: block;
+}
+
+#navigation a:link {
+  color: black;
+}
+
+#navigation a:visited {
+  color: black;
+}
+
+#navigation a:hover {
+  background-color: yellow;
+}
+
+#navigation a:active {
+  background-color: #ff9999
+}
+
 @media(max-width:800px) {
-  #grid{
+  #grid {
     display: block;
   }
-  #navigation{
+
+  #navigation {
     border-bottom: 1px solid;
     border-right: none;
   }
@@ -41,6 +66,6 @@ article {
   font-size: 1.6vw;
 }
 
-body{
+body {
   margin: 0px;
 }
