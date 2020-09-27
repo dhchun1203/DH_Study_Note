@@ -1,0 +1,45 @@
+h1 {
+  border-bottom: 3px solid;
+  text-align: center;
+  margin: 10px 0px 10px 0px;
+  padding: 10px;
+}
+
+#grid a {
+  text-decoration: none;
+  margin-bottom: 4px;
+  display: block;
+}
+
+
+#grid li {
+  font-size: 1.5vw;
+}
+
+#grid a:link {
+  color: black;
+}
+
+#grid a:visited{
+  color: black;
+}
+
+#grid a:hover {
+  background-color: yellow;
+}
+
+#grid a:active {
+  background-color: #ff9999
+}
+
+#grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+
+
+#grid div {
+  height:auto;
+  border-right: 1px dotted;
+}
