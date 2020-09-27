@@ -1,0 +1,46 @@
+#header h1 {
+  padding: 10px;
+  margin-bottom: 0px;
+  border-bottom: 3px solid black;
+  font-size: 3vw;
+  text-align: center;
+}
+
+#grid {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+}
+#grid section{
+  padding-left: 10px;
+}
+
+#grid h2{
+  margin-top:10px;
+}
+
+#navigation {
+  border-right: 1px solid black;
+}
+
+#navigation ol {
+  font-size: 15px;
+  padding-left: 17px
+}
+@media(max-width:800px) {
+  #grid{
+    display: block;
+  }
+  #navigation{
+    border-bottom: 1px solid;
+    border-right: none;
+  }
+}
+
+article {
+  border-bottom: 1px dashed black;
+  font-size: 1.6vw;
+}
+
+body{
+  margin: 0px;
+}
