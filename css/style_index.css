@@ -1,47 +1,92 @@
+:root {
+  --body-bgcolor: #b0bec5;
+  --nav__logo-bgcolor: #263238;
+  --nav-bgcolor: #37464f;
+  --header-nav-text-color: #ffffff;
+  --a-text-color: #bdbdbd;
+}
+
+body {
+  font-family: "Source Sans Pro", sans-serif;
+  background-color: var(--body-bgcolor);
+  margin: 0;
+}
+
+.nav {
+  background-color: var(--nav-bgcolor);
+}
+
 h1 {
-  border-bottom: 3px solid;
-  text-align: center;
-  margin: 10px 0px 10px 0px;
-  padding: 10px;
+  color: var(--header-nav-text-color);
+  text-shadow: 4px 4px black;
 }
-h2{
-  font-size: 3vw;
+
+h2 {
+  color: var(--header-nav-text-color);
 }
-#grid a {
+
+.nav__logo {
+  background-color: var(--nav__logo-bgcolor);
+  display: flex;
+  justify-content: center;
+}
+
+.nav__logo i {
+  font-size: 70px;
+}
+.nav__menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.nav__menu ul {
+  margin-top: 0;
+  padding-left: 0;
+}
+
+.nav__menu li {
+  list-style: none;
+  color: var(--header-nav-text-color);
+  padding-bottom: 5px;
+  border-radius: 5px;
+}
+.nav__menu h2 {
+  margin-top: 0;
+  text-align: left;
+  border-bottom: 2px solid var(--header-nav-text-color);
+}
+
+.nav__menu li:hover {
+  background-color: #efebe9;
+}
+
+a {
   text-decoration: none;
-  margin-bottom: 4px;
   display: block;
+  color: var(--a-text-color);
 }
 
-
-#grid li {
-  font-size: 1.5vw;
+.description {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  min-height: 250px;
+}
+.article p {
+  text-align: center;
+  font-size: 2.3vw;
 }
 
-#grid a:link {
-  color: black;
-}
-
-#grid a:visited{
-  color: black;
-}
-
-#grid a:hover {
-  background-color: yellow;
-}
-
-#grid a:active {
-  background-color: #ff9999
-}
-
-#grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-}
-
-
-
-#grid div {
-  height:auto;
-  border-right: 1px dotted;
+@media screen and (max-width: 800px) {
+  .nav__menu {
+    display: flex;
+    flex-direction: column;
+  }
+  .nav__menu ul {
+    padding-left: 50px;
+  }
+  .article p {
+    font-size: 2.8vw;
+  }
 }
